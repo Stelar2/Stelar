@@ -12,6 +12,7 @@
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    background-color: #000; /* fallback background color */
   }
   body {
     font-family: Arial, sans-serif;
@@ -20,8 +21,9 @@
     scroll-snap-align: start;
     width: 100vw;
     height: 100vh;
-    background-size: cover;
+    background-size: contain;  /* Change from cover to contain */
     background-position: center center;
+    background-repeat: no-repeat;
   }
   /* Assign each section's background image */
   #slide1 { background-image: url('1.png'); }
